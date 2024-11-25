@@ -9,7 +9,7 @@ supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJ
 supabase: Client = create_client(supabase_url, supabase_key)
 
 # Streamlit page configuration
-st.title("Real-time Temperature and Humidity Monitor 🌡️💧")
+st.title("Real-time Voltage and Percentage Monitor 🌡️💧")
 st.markdown("Data fetched from Supabase in real-time.")
 # Function to fetch data from Supabase
 def fetch_data():
