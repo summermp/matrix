@@ -13,7 +13,7 @@ st.title("Real-time Temperature and Humidity Monitor 🌡️💧")
 st.markdown("Data fetched from Supabase in real-time.")
 # Function to fetch data from Supabase
 def fetch_data():
-    response = supabase.table('sensor_data').select('*').order('timestamp', desc=True).limit(10).execute()
+    response = supabase.table('sensor_data').select('*').order('id', desc=True).limit(10).execute()
     data = response.data
     return pd.DataFrame(data)
 
@@ -26,7 +26,7 @@ message_placeholder = st.empty()  # Message placeholder
 while True:
     df = fetch_data()
     if df.empty:  # Check if the DataFrame is empty
-        message_placeholder.warning("⚠️ No data available from Supabase.")
+        message_placeholder.warning("⚠️ No data available from Matrix Mini R4.")
         data_placeholder.empty()  # Clear any previous table
         chart_placeholder.empty()  # Clear any previous chart
     else:
@@ -36,6 +36,6 @@ while True:
         
         # Display the latest 10 readings
         data_placeholder.dataframe(df)
-        chart_placeholder.line_chart(df[['temperature', 'humidity']])
+        chart_placeholder.line_chart(df[['voltage', 'percentage']])
         
     time.sleep(5)  # Refresh every 5 seconds
