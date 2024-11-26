@@ -59,7 +59,7 @@ html("""<script>
 
     // Set dynamic title and background color
     decoration.style.backgroundColor = "limegreen";  // Background color
-    decoration.innerHTML = "🚗💡🔋 Unlock the power of real-time autonomous vehicle monitoring 🚀🌍 <br> <span style='color:blue;'>Thanks to Matrix Robotics for the sample Matrix Mini R4 kit!</span>";  // Setting the title text
+    decoration.innerHTML = "🚗💡🔋 Unlock the power of real-time autonomous vehicle monitoring 🚀🌍 <br> <span style='color:blue;'>Thanks to Matrix Robotics for the sampleMATRIX R4 Robo Set (MA300)!</span>";  // Setting the title text
 
     </script>""", width=0, height=0)
 
