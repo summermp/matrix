@@ -106,19 +106,19 @@ while True:
                      voltage, "V", voltage_placeholder)
         # Display battery percentage with conditional icon
         if percentage >= 90:
-            display_icon('battery_full', 'Percentage', voltage,
+            display_icon('battery_full', 'Percentage', percentage,
                          "%", percentage_placeholder, "limegreen")
         elif percentage >= 75:
-            display_icon('battery_4_bar', 'Percentage', voltage,
+            display_icon('battery_4_bar', 'Percentage', percentage,
                          "%", percentage_placeholder, "lime")
         elif percentage >= 50:
-            display_icon('battery_3_bar', 'Percentage', voltage,
+            display_icon('battery_3_bar', 'Percentage', percentage,
                          "%", percentage_placeholder, "palegreen")
         elif percentage >= 25:
-            display_icon('battery_2_bar', 'Percentage', voltage,
+            display_icon('battery_2_bar', 'Percentage', percentage,
                          "%", percentage_placeholder, "gold")
         else:
-            display_icon('battery_alert', 'Percentage', voltage,
+            display_icon('battery_alert', 'Percentage', percentage,
                          "%", percentage_placeholder, "red")
 
         display_icon('terrain', 'Obstacle Proximity', distance,
