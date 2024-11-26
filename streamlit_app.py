@@ -59,12 +59,12 @@ html("""<script>
 
     // Set dynamic title and background color
     decoration.style.backgroundColor = "limegreen";  // Background color
-    decoration.innerHTML = "🚗💡🔋 Unlock the power of real-time autonomous vehicle monitoring 🚀🌍 <br> <span style='color:blue;'>Thanks to Matrix Robotics for the sampleMATRIX R4 Robo Set (MA300)!</span>";  // Setting the title text
+    decoration.innerHTML = "🚗💡🔋 Unlock the power of real-time autonomous vehicle monitoring 🚀🌍 <br> <span style='color:blue;'>Thanks to Matrix Robotics for the sample MATRIX R4 Robo Set (MA300)!</span>";  // Setting the title text
 
     </script>""", width=0, height=0)
 
 with st.sidebar:
-    st.markdown("With <b style='color:blue;'>Matrix Mini R4</b>, <b style='color:red;'>Streamlit</b>, and <b style='color:green;'>Supabase</b>! Track vital vehicle stats like ", unsafe_allow_html=True)
+    st.markdown("With <b style='color:blue;'>MATRIX R4 Robo Set (MA300)</b>, <b style='color:red;'>Streamlit</b>, and <b style='color:green;'>Supabase</b>! Track vital vehicle stats like ", unsafe_allow_html=True)
     percentage_placeholder = st.empty()  # Placeholder for battery percentage
     voltage_placeholder = st.empty()    # Placeholder for voltage data
     distance_placeholder = st.empty()   # Placeholder for distance data
